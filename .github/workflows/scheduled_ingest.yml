@@ -2,8 +2,8 @@ name: Scheduled Closed Corpus Ingestion
 
 on:
   schedule:
-    # Run daily at 00:00 UTC (5:30 AM IST)
-    - cron: '0 0 * * *'
+    # Run daily at 04:30 UTC (10:00 AM IST)
+    - cron: '30 4 * * *'
   workflow_dispatch:
     # Enable manual triggering from GitHub Actions tab
     inputs:
