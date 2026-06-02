@@ -934,16 +934,63 @@ Groww-inspired **minimal** chat UI meeting problem-statement UX requirements.
 - Render `source_url` as single primary link.
 - Display `last_updated` in footer line verbatim.
 
+### Frontend Deployment Plan (Vercel)
+
+#### Objective
+
+Deploy Phase 6 UI as a static Vercel app and proxy API requests to the Railway-hosted backend.
+
+#### Deployment architecture
+
+1. Vercel serves static assets from `frontend/`.
+2. Frontend sends requests to `/api/*` in production.
+3. `frontend/vercel.json` rewrites `/api/*` to Railway backend `/api/*`.
+4. Local development continues to call `http://127.0.0.1:8000/api`.
+
+#### Required frontend configuration
+
+- `frontend/app.js`
+  - Local hostnames (`localhost`, `127.0.0.1`) -> `http://127.0.0.1:8000/api`
+  - Non-local (Vercel) -> `/api`
+- `frontend/vercel.json`
+  - Rewrite rule from `/api/(.*)` to `https://<RAILWAY_BACKEND_DOMAIN>/api/$1`
+- `frontend/README.md`
+  - Deployment steps and placeholder replacement instructions
+
+#### Vercel setup steps
+
+1. Create/import project in Vercel from this repository.
+2. Set **Root Directory** to `frontend`.
+3. Framework preset: **Other** (static site).
+4. Build command: *(none)*.
+5. Output directory: *(none)*.
+6. Update `frontend/vercel.json` by replacing `REPLACE_WITH_RAILWAY_BACKEND_URL` with the Railway backend domain.
+7. Deploy and verify:
+   - `GET /` loads chat UI
+   - `GET /api/health` returns backend health via rewrite
+   - chat submission returns factual answer with source URL
+
+#### Post-deploy validation checklist
+
+- [ ] Disclaimer banner visible on load
+- [ ] Example chips load from `/api/examples`
+- [ ] `/api/chat` returns valid response
+- [ ] Source link opens Groww page
+- [ ] UI works on mobile viewport
+- [ ] No CORS error in browser console
+
 ### Deliverables
 
 - `frontend/` or `ui/` — static HTML+JS or lightweight React/Vite
 - Disclaimer snippet reusable in README
+- `frontend/vercel.json` — Vercel API rewrite/proxy config for Railway backend
 
 ### Exit criteria
 
 - [ ] Disclaimer always visible
 - [ ] Three examples functional
 - [ ] Mobile-friendly layout (basic responsive CSS)
+- [ ] Frontend deployed on Vercel and successfully proxies `/api/*` to Railway
 
 ---
 
