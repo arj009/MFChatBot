@@ -69,8 +69,11 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          # Check for changes in corpus manifest and chunk store
-          git add corpus/ingest_manifest.json data/chunks/chunk_store.jsonl
+          # Stage manifest (tracked) and force-add chunk store (gitignored by design)
+          git add corpus/ingest_manifest.json
+          if [ -f data/chunks/chunk_store.jsonl ]; then
+            git add -f data/chunks/chunk_store.jsonl
+          fi
           
           if git diff --cached --quiet; then
             echo "No changes in content hashes detected. Skipping commit."
