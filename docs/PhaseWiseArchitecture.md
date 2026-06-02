@@ -887,12 +887,15 @@ The backend is completely stateless:
 ### Deliverables
 * `src/orchestrator/pipeline.py`: Pure Python core pipeline orchestrating classifier, retriever, performance, and generator.
 * `src/api/main.py`: FastAPI server exposing `/api/chat`, `/api/examples`, and `/api/health` endpoints with proper CORS handling.
+* `scripts/start_railway.py`: Railway startup entrypoint that auto-builds vector index when missing.
+* `Procfile` + `railway.json`: Railway process and health-check configuration.
 
 ### Exit criteria
 
 - [ ] `/api/chat` satisfies response contract for all golden tests
 - [ ] No PII persisted in server logs
 - [ ] Stateless API (no user accounts)
+- [ ] Backend deploys successfully on Railway with health check passing at `/api/health`
 
 ---
 

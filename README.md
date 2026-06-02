@@ -54,6 +54,38 @@ Visit `http://localhost:3000` in your browser.
 
 ---
 
+## ☁️ Deployment
+
+### Backend on Railway
+
+This repository is configured for Railway backend deployment with:
+
+- `Procfile` -> `python scripts/start_railway.py`
+- `railway.json` -> health check path `/api/health`
+- Startup behavior -> auto-builds `data/index` from `data/chunks/chunk_store.jsonl` if index is missing
+
+#### Railway setup
+
+1. Create a new Railway project from this GitHub repo.
+2. Service root: repository root (`MFChatBot`).
+3. Add environment variable:
+   - `GROQ_API_KEY=<your_key>`
+4. Deploy and verify:
+   - `GET /api/health` returns `{"status":"ok", ...}`
+   - `POST /api/chat` returns factual response JSON
+
+### Frontend on Vercel
+
+Frontend is deployable from `frontend/`:
+
+1. Set Vercel root directory to `frontend`.
+2. In `frontend/vercel.json`, replace:
+   - `https://REPLACE_WITH_RAILWAY_BACKEND_URL`
+   - with your Railway backend URL
+3. Deploy and verify chat works through `/api/*` rewrite.
+
+---
+
 ## 📂 Scope: Included Schemes (AMC)
 The chatbot restricts its knowledge strictly to the following target AMC: **ICICI Prudential Mutual Fund**.
 Data is securely fetched from the Groww URL inventory located in `corpus/url_inventory.csv`.
