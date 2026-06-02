@@ -1,0 +1,28 @@
+# Refusal copy — Phase 0 / Phase 4
+
+disclaimer_short: Facts-only. No investment advice.
+
+templates:
+  advisory: |
+    I can only share factual details from official scheme pages, not personal investment advice.
+    I’m not able to tell you whether you should invest in a particular fund.
+    For general investor education, see: {educational_link}
+
+  comparative: |
+    I can’t compare funds or say which one is better—that would be investment advice.
+    I can answer factual questions about a specific ICICI Prudential scheme on our approved pages.
+    Learn more: {educational_link}
+
+  performance_calc: |
+    I can’t project returns or calculate future values.
+    Performance and historical data are on the scheme’s Groww page: {scheme_link}
+    Last updated from sources: {date}
+
+  out_of_scope: |
+    That question isn’t covered by the scheme pages I use for this assistant.
+    I can help with factual questions about the listed ICICI Prudential funds on Groww.
+    Learn more: {educational_link}
+
+  pii_risk: |
+    Please don’t share personal identifiers such as PAN, Aadhaar, account numbers, or OTPs here.
+    This assistant doesn’t collect or store personal information.

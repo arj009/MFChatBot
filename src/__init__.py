@@ -1,0 +1,1 @@
+"""MFChatBot application package."""

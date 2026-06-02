@@ -1,0 +1,82 @@
+name: Scheduled Closed Corpus Ingestion
+
+on:
+  schedule:
+    # Run daily at 00:00 UTC (5:30 AM IST)
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+    # Enable manual triggering from GitHub Actions tab
+    inputs:
+      force:
+        description: 'Force re-process all documents (ignore change detection)'
+        type: boolean
+        required: false
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+          else
+            # Install core package and its ingestion dependencies if requirements.txt is not yet setup
+            pip install beautifulsoup4 pydantic requests pyyaml pytest
+          fi
+
+      - name: Run Ingestion Pipeline
+        env:
+          PYTHONPATH: .
+        run: |
+          # Formulate the ingestion command based on workflow inputs
+          CMD="python scripts/ingest.py"
+          if [ "${{ github.event.inputs.force }}" = "true" ]; then
+            CMD="$CMD --force"
+          fi
+          echo "Running Ingestion Command: $CMD"
+          eval $CMD
+
+      - name: Build Vector Index (Conditionally)
+        env:
+          PYTHONPATH: .
+        run: |
+          if [ "${{ github.event.inputs.force }}" = "true" ] || ! git diff --quiet data/chunks/chunk_store.jsonl; then
+            echo "Changes detected or forced rebuild requested. Triggering vector index builder..."
+            python scripts/build_index.py
+          else
+            echo "No chunk store modifications detected. Skipping index compilation."
+          fi
+
+      - name: Commit and Push Changes
+        run: |
+          # Configure Git credentials
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Check for changes in corpus manifest and chunk store
+          git add corpus/ingest_manifest.json data/chunks/chunk_store.jsonl
+          
+          if git diff --cached --quiet; then
+            echo "No changes in content hashes detected. Skipping commit."
+          else
+            echo "Changes detected! Committing updated chunk store and manifest."
+            git commit -m "Auto-Ingest: Update chunk store and content hashes [skip ci]"
+            git push
+          fi
+

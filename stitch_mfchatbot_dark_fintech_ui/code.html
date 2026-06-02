@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MFChatBot | Fintech Assistant</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&amp;family=Inter:wght@400;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Outfit:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(26, 29, 32, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .neon-glow-teal {
+            box-shadow: 0 0 15px rgba(0, 208, 156, 0.2);
+        }
+        .neon-border-teal {
+            border: 1px solid rgba(0, 208, 156, 0.4);
+        }
+        .chat-scroll::-webkit-scrollbar {
+            width: 4px;
+        }
+        .chat-scroll::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-primary-container": "#00533c",
+                      "outline-variant": "#3c4a43",
+                      "secondary-container": "#494c4f",
+                      "on-tertiary-container": "#564700",
+                      "on-tertiary-fixed": "#221b00",
+                      "outline": "#85948c",
+                      "on-primary": "#003828",
+                      "primary": "#44edb7",
+                      "on-secondary-fixed": "#191c1f",
+                      "primary-container": "#00d09c",
+                      "tertiary": "#f7d000",
+                      "on-primary-fixed": "#002116",
+                      "surface-container-low": "#1c1b1b",
+                      "primary-fixed": "#59fdc5",
+                      "on-error": "#690005",
+                      "background": "#131313",
+                      "surface-dim": "#131313",
+                      "on-secondary-container": "#babcc0",
+                      "on-primary-fixed-variant": "#00513b",
+                      "inverse-on-surface": "#313030",
+                      "surface-tint": "#2fe0aa",
+                      "tertiary-fixed": "#ffe16d",
+                      "surface-variant": "#353534",
+                      "on-secondary": "#2e3134",
+                      "error": "#ffb4ab",
+                      "on-surface-variant": "#bacac1",
+                      "surface": "#131313",
+                      "surface-container-lowest": "#0e0e0e",
+                      "surface-container-high": "#2a2a2a",
+                      "on-surface": "#e5e2e1",
+                      "inverse-surface": "#e5e2e1",
+                      "secondary-fixed": "#e1e2e6",
+                      "secondary": "#c5c6ca",
+                      "secondary-fixed-dim": "#c5c6ca",
+                      "primary-fixed-dim": "#2fe0aa",
+                      "on-background": "#e5e2e1",
+                      "on-error-container": "#ffdad6",
+                      "surface-container-highest": "#353534",
+                      "surface-bright": "#393939",
+                      "tertiary-fixed-dim": "#e9c400",
+                      "on-tertiary-fixed-variant": "#544600",
+                      "surface-container": "#201f1f",
+                      "on-secondary-fixed-variant": "#44474a",
+                      "tertiary-container": "#d7b500",
+                      "inverse-primary": "#006c4f",
+                      "error-container": "#93000a",
+                      "on-tertiary": "#3a3000"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "container-max": "1200px",
+                      "xl": "64px",
+                      "lg": "40px",
+                      "sm": "12px",
+                      "md": "24px",
+                      "xs": "4px",
+                      "base": "8px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "body-md": ["Inter"],
+                      "display-lg": ["Outfit"],
+                      "body-lg": ["Inter"],
+                      "label-sm": ["Inter"],
+                      "display-lg-mobile": ["Outfit"],
+                      "headline-md": ["Outfit"]
+              },
+              "fontSize": {
+                      "body-md": ["16px", {"lineHeight": "24px", "letterSpacing": "0", "fontWeight": "400"}],
+                      "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "letterSpacing": "0", "fontWeight": "400"}],
+                      "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                      "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}]
+              }
+            },
+          },
+        }
+      </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body-md overflow-hidden h-screen flex flex-col">
+<!-- Top Warning Banner -->
+<div class="bg-tertiary/10 backdrop-blur-md py-xs px-gutter flex items-center justify-center space-x-base border-b border-tertiary/20 z-[60]">
+<span class="material-symbols-outlined text-tertiary text-[18px]">warning</span>
+<p class="text-[12px] font-label-sm text-tertiary tracking-wide">Factual assistance only. Always verify critical financial data.</p>
+</div>
+<!-- TopAppBar Shell Component -->
+<header class="bg-surface/80 backdrop-blur-xl dark:bg-surface/80 text-primary dark:text-primary-fixed fixed top-0 w-full border-b border-white/10 shadow-lg shadow-black/40 flex items-center justify-between px-gutter py-sm z-50 mt-[32px]">
+<div class="flex items-center gap-md">
+<!-- Glowing Avatar -->
+<div class="relative">
+<div class="absolute inset-0 bg-primary/30 rounded-full blur-md animate-pulse"></div>
+<div class="w-10 h-10 rounded-full bg-gradient-to-br from-primary-container to-inverse-primary flex items-center justify-center text-on-primary font-headline-md border border-primary/40 relative z-10">
+                    MF
+                </div>
+</div>
+<div>
+<h1 class="font-display-lg-mobile text-display-lg-mobile text-primary drop-shadow-[0_0_8px_rgba(47,224,170,0.4)] leading-tight">MFChatBot</h1>
+<p class="text-[11px] text-on-surface-variant font-label-sm uppercase tracking-widest opacity-80">ICICI Prudential Factual Assistant</p>
+</div>
+</div>
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-white/5 transition-all duration-300">
+<span class="material-symbols-outlined">more_vert</span>
+</button>
+</header>
+<!-- Main Chat Canvas -->
+<main class="flex-1 mt-[110px] mb-[140px] px-gutter overflow-y-auto chat-scroll space-y-lg pt-md pb-xl">
+<!-- Assistant Welcome (Atmospheric) -->
+<div class="flex justify-center py-base">
+<span class="text-on-surface-variant/40 text-[12px] font-label-sm">Today, May 27, 2026</span>
+</div>
+<!-- User Message -->
+<div class="flex flex-col items-end space-y-xs max-w-[85%] ml-auto">
+<div class="bg-gradient-to-br from-[#005E46] to-[#008764] text-white p-md rounded-2xl rounded-tr-none shadow-md border border-white/5">
+<p class="font-body-md">Compare the expense ratio of ICICI Pru Bluechip Fund vs HDFC Top 100.</p>
+</div>
+<span class="text-[10px] text-on-surface-variant/60 font-label-sm mr-xs">14:02 · Read</span>
+</div>
+<!-- Assistant Message -->
+<div class="flex flex-col items-start space-y-xs max-w-[90%]">
+<div class="glass-panel p-md rounded-2xl rounded-tl-none shadow-xl">
+<div class="flex items-center gap-base mb-sm">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<span class="font-label-sm text-primary tracking-wider uppercase text-[11px]">Direct Comparison Report</span>
+</div>
+<div class="space-y-sm text-on-surface/90">
+<p class="font-body-md leading-relaxed">Based on the latest fund disclosures:</p>
+<ul class="space-y-base">
+<li class="flex items-start gap-base">
+<span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+<span class="text-body-md"><strong class="text-white">ICICI Pru Bluechip:</strong> Current expense ratio is <span class="text-primary font-semibold">0.88%</span> (Direct Plan).</span>
+</li>
+<li class="flex items-start gap-base">
+<span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+<span class="text-body-md"><strong class="text-white">HDFC Top 100:</strong> Current expense ratio is <span class="text-primary font-semibold">0.74%</span> (Direct Plan).</span>
+</li>
+</ul>
+<p class="text-on-surface-variant text-[14px] italic border-l-2 border-primary/20 pl-base mt-md">
+                        The HDFC Top 100 Fund currently maintains a lower cost structure by 14 basis points.
+                    </p>
+</div>
+<!-- Factual Footer & CTA -->
+<div class="mt-lg pt-md border-t border-white/5 flex flex-col gap-md">
+<div class="flex items-center justify-between">
+<span class="text-[11px] text-on-surface-variant/70 font-label-sm">Last updated: 2026-05-27</span>
+<div class="flex gap-xs">
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant/50">share</span>
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant/50">thumb_up</span>
+</div>
+</div>
+<button class="w-full py-sm bg-primary/10 hover:bg-primary/20 border border-primary/30 rounded-xl text-primary font-label-sm transition-all flex items-center justify-center gap-base">
+                        Read more on Groww
+                        <span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</button>
+</div>
+</div>
+<span class="text-[10px] text-on-surface-variant/60 font-label-sm ml-xs">14:03 · Verified Agent</span>
+</div>
+<!-- Suggestion Chips -->
+<div class="flex flex-wrap gap-sm pt-base">
+<button class="neon-border-teal bg-surface-container/50 px-md py-sm rounded-full text-primary font-label-sm text-[13px] hover:bg-primary/10 transition-all flex items-center gap-xs shadow-[0_0_10px_rgba(0,208,156,0.1)]">
+<span class="material-symbols-outlined text-[16px]">percent</span>
+                Expense Ratio
+            </button>
+<button class="neon-border-teal bg-surface-container/50 px-md py-sm rounded-full text-primary font-label-sm text-[13px] hover:bg-primary/10 transition-all flex items-center gap-xs">
+<span class="material-symbols-outlined text-[16px]">payments</span>
+                Minimum SIP
+            </button>
+<button class="neon-border-teal bg-surface-container/50 px-md py-sm rounded-full text-primary font-label-sm text-[13px] hover:bg-primary/10 transition-all flex items-center gap-xs">
+<span class="material-symbols-outlined text-[16px]">exit_to_app</span>
+                Exit Load
+            </button>
+</div>
+</main>
+<!-- Bottom Input Area -->
+<div class="fixed bottom-0 left-0 w-full z-40">
+<!-- Floating Prompt Area -->
+<div class="px-gutter pb-xl pt-md bg-gradient-to-t from-background via-background to-transparent">
+<div class="glass-panel rounded-full flex items-center p-xs pr-sm shadow-2xl">
+<div class="flex-1 px-md">
+<input class="w-full bg-transparent border-none focus:ring-0 text-on-surface placeholder-on-surface-variant/50 font-body-md" placeholder="Type your factual question..." type="text"/>
+</div>
+<button class="w-12 h-12 bg-primary text-on-primary rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(0,208,156,0.4)] active:scale-90 transition-transform">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">send</span>
+</button>
+</div>
+</div>
+<!-- BottomNavBar Shell Component -->
+<nav class="bg-surface-container/90 backdrop-blur-xl dark:bg-surface-container/90 fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-md pb-base pt-xs rounded-t-xl border-t border-white/5 shadow-[0_-4px_24px_rgba(0,0,0,0.5)]">
+<div class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-full p-3 shadow-[0_0_12px_rgba(0,208,156,0.3)] active:scale-95 transition-transform">
+<span class="material-symbols-outlined" data-icon="chat_bubble" style="font-variation-settings: 'FILL' 1;">chat_bubble</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant p-3 hover:text-primary-fixed transition-colors active:scale-95 transition-transform">
+<span class="material-symbols-outlined" data-icon="history">history</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant p-3 hover:text-primary-fixed transition-colors active:scale-95 transition-transform">
+<span class="material-symbols-outlined" data-icon="account_balance_wallet">account_balance_wallet</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant p-3 hover:text-primary-fixed transition-colors active:scale-95 transition-transform">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+</div>
+</nav>
+</div>
+<!-- Micro-interaction Scripts -->
+<script>
+        // Simple entry animation for bubbles
+        document.addEventListener('DOMContentLoaded', () => {
+            const bubbles = document.querySelectorAll('.rounded-2xl');
+            bubbles.forEach((b, i) => {
+                b.style.opacity = '0';
+                b.style.transform = 'translateY(10px)';
+                setTimeout(() => {
+                    b.style.transition = 'all 0.5s ease-out';
+                    b.style.opacity = '1';
+                    b.style.transform = 'translateY(0)';
+                }, 200 * i);
+            });
+
+            // Focus interaction for input
+            const input = document.querySelector('input');
+            const inputContainer = input.closest('.glass-panel');
+            input.addEventListener('focus', () => {
+                inputContainer.classList.add('neon-border-teal');
+                inputContainer.style.borderColor = 'rgba(0, 208, 156, 0.6)';
+            });
+            input.addEventListener('blur', () => {
+                inputContainer.classList.remove('neon-border-teal');
+                inputContainer.style.borderColor = 'rgba(255, 255, 255, 0.08)';
+            });
+        });
+    </script>
+</body></html>

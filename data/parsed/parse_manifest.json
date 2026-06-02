@@ -1,0 +1,250 @@
+{
+  "phase": "2.2",
+  "parsed_at": "2026-05-18T15:25:19+00:00",
+  "url_count": 30,
+  "ok_count": 30,
+  "skipped_count": 0,
+  "failed_count": 0,
+  "results": [
+    {
+      "entry_id": 1,
+      "parse_status": "ok",
+      "parsed_path": "data/parsed/1.json",
+      "sections_count": 4,
+      "text_length": 1241,
+      "errors": []
+    },
+    {
+      "entry_id": 2,
+      "parse_status": "ok",
+      "parsed_path": "data/parsed/2.json",
+      "sections_count": 4,
+      "text_length": 1026,
+      "errors": []
+    },
+    {
+      "entry_id": 3,
+      "parse_status": "ok",
+      "parsed_path": "data/parsed/3.json",
+      "sections_count": 4,
+      "text_length": 1374,
+      "errors": []
+    },
+    {
+      "entry_id": 4,
+      "parse_status": "ok",
+      "parsed_path": "data/parsed/4.json",
+      "sections_count": 4,
+      "text_length": 1468,
+      "errors": []
+    },
+    {
+      "entry_id": 5,
+      "parse_status": "ok",
+      "parsed_path": "data/parsed/5.json",
+      "sections_count": 4,
+      "text_length": 1660,
+      "errors": []
+    },
+    {
+      "entry_id": 6,
+      "parse_status": "ok",
+      "parsed_path": "data/parsed/6.json",
+      "sections_count": 4,
+      "text_length": 1498,
+      "errors": []
+    },
+    {
+      "entry_id": 7,
+      "parse_status": "ok",
+      "parsed_path": "data/parsed/7.json",
+      "sections_count": 4,
+      "text_length": 1276,
+      "errors": []
+    },
+    {
+      "entry_id": 8,
+      "parse_status": "ok",
+      "parsed_path": "data/parsed/8.json",
+      "sections_count": 4,
+      "text_length": 1524,
+      "errors": []
+    },
+    {
+      "entry_id": 9,
+      "parse_status": "ok",
+      "parsed_path": "data/parsed/9.json",
+      "sections_count": 1,
+      "text_length": 1681,
+      "errors": []
+    },
+    {
+      "entry_id": 10,
+      "parse_status": "ok",
+      "parsed_path": "data/parsed/10.json",
+      "sections_count": 4,
+      "text_length": 1460,
+      "errors": []
+    },
+    {
+      "entry_id": 11,
+      "parse_status": "ok",
+      "parsed_path": "data/parsed/11.json",
+      "sections_count": 4,
+      "text_length": 1175,
+      "errors": []
+    },
+    {
+      "entry_id": 12,
+      "parse_status": "ok",
+      "parsed_path": "data/parsed/12.json",
+      "sections_count": 4,
+      "text_length": 1217,
+      "errors": []
+    },
+    {
+      "entry_id": 13,
+      "parse_status": "ok",
+      "parsed_path": "data/parsed/13.json",
+      "sections_count": 4,
+      "text_length": 1369,
+      "errors": []
+    },
+    {
+      "entry_id": 14,
+      "parse_status": "ok",
+      "parsed_path": "data/parsed/14.json",
+      "sections_count": 4,
+      "text_length": 1269,
+      "errors": []
+    },
+    {
+      "entry_id": 15,
+      "parse_status": "ok",
+      "parsed_path": "data/parsed/15.json",
+      "sections_count": 4,
+      "text_length": 1540,
+      "errors": []
+    },
+    {
+      "entry_id": 16,
+      "parse_status": "ok",
+      "parsed_path": "data/parsed/16.json",
+      "sections_count": 4,
+      "text_length": 1577,
+      "errors": []
+    },
+    {
+      "entry_id": 17,
+      "parse_status": "ok",
+      "parsed_path": "data/parsed/17.json",
+      "sections_count": 4,
+      "text_length": 1261,
+      "errors": []
+    },
+    {
+      "entry_id": 18,
+      "parse_status": "ok",
+      "parsed_path": "data/parsed/18.json",
+      "sections_count": 4,
+      "text_length": 1285,
+      "errors": []
+    },
+    {
+      "entry_id": 19,
+      "parse_status": "ok",
+      "parsed_path": "data/parsed/19.json",
+      "sections_count": 4,
+      "text_length": 1832,
+      "errors": []
+    },
+    {
+      "entry_id": 20,
+      "parse_status": "ok",
+      "parsed_path": "data/parsed/20.json",
+      "sections_count": 4,
+      "text_length": 1250,
+      "errors": []
+    },
+    {
+      "entry_id": 21,
+      "parse_status": "ok",
+      "parsed_path": "data/parsed/21.json",
+      "sections_count": 4,
+      "text_length": 1251,
+      "errors": []
+    },
+    {
+      "entry_id": 22,
+      "parse_status": "ok",
+      "parsed_path": "data/parsed/22.json",
+      "sections_count": 4,
+      "text_length": 1237,
+      "errors": []
+    },
+    {
+      "entry_id": 23,
+      "parse_status": "ok",
+      "parsed_path": "data/parsed/23.json",
+      "sections_count": 4,
+      "text_length": 1161,
+      "errors": []
+    },
+    {
+      "entry_id": 24,
+      "parse_status": "ok",
+      "parsed_path": "data/parsed/24.json",
+      "sections_count": 4,
+      "text_length": 1393,
+      "errors": []
+    },
+    {
+      "entry_id": 25,
+      "parse_status": "ok",
+      "parsed_path": "data/parsed/25.json",
+      "sections_count": 4,
+      "text_length": 1967,
+      "errors": []
+    },
+    {
+      "entry_id": 26,
+      "parse_status": "ok",
+      "parsed_path": "data/parsed/26.json",
+      "sections_count": 4,
+      "text_length": 1392,
+      "errors": []
+    },
+    {
+      "entry_id": 27,
+      "parse_status": "ok",
+      "parsed_path": "data/parsed/27.json",
+      "sections_count": 4,
+      "text_length": 1398,
+      "errors": []
+    },
+    {
+      "entry_id": 28,
+      "parse_status": "ok",
+      "parsed_path": "data/parsed/28.json",
+      "sections_count": 4,
+      "text_length": 1420,
+      "errors": []
+    },
+    {
+      "entry_id": 29,
+      "parse_status": "ok",
+      "parsed_path": "data/parsed/29.json",
+      "sections_count": 4,
+      "text_length": 1268,
+      "errors": []
+    },
+    {
+      "entry_id": 30,
+      "parse_status": "ok",
+      "parsed_path": "data/parsed/30.json",
+      "sections_count": 4,
+      "text_length": 1432,
+      "errors": []
+    }
+  ]
+}

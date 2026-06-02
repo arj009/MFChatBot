@@ -1,0 +1,9 @@
+# Refusal-only links — NOT part of RAG corpus (Phase 0)
+
+default:
+  label: AMFI — Mutual Fund investor information
+  url: https://www.amfiindia.com/investor/knowledge-center-info?zoneName=IntroductionMutualFunds
+
+alternates:
+  - label: SEBI — Mutual funds
+    url: https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=14&smid=0

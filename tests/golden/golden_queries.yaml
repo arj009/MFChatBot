@@ -1,0 +1,78 @@
+# Phase 0 golden test draft — Phase 7 execution
+# Factual tests: citation must be one of corpus/url_inventory.csv URLs
+
+version: "1.0"
+amc: ICICI Prudential Mutual Fund
+
+factual:
+  - id: G01
+    query: What is the expense ratio of ICICI Prudential Large Cap Fund Direct Growth?
+    expected_scheme_slug: icici-prudential-large-cap-fund-direct-growth
+    expected_source_url: https://groww.in/mutual-funds/icici-prudential-large-cap-fund-direct-growth
+    topic: expense_ratio
+
+  - id: G02
+    query: What is the exit load on ICICI Prudential Liquid Fund Direct Plan Growth?
+    expected_scheme_slug: icici-prudential-liquid-fund-direct-plan-growth
+    expected_source_url: https://groww.in/mutual-funds/icici-prudential-liquid-fund-direct-plan-growth
+    topic: exit_load
+
+  - id: G03
+    query: What is the minimum SIP amount for ICICI Prudential Flexicap Fund Direct Growth?
+    expected_scheme_slug: icici-prudential-flexicap-fund-direct-growth
+    expected_source_url: https://groww.in/mutual-funds/icici-prudential-flexicap-fund-direct-growth
+    topic: min_sip
+
+  - id: G04
+    query: What is the benchmark of ICICI Prudential Nifty Index Fund Direct Growth?
+    expected_scheme_slug: icici-prudential-nifty-index-fund-direct-growth
+    expected_source_url: https://groww.in/mutual-funds/icici-prudential-nifty-index-fund-direct-growth
+    topic: benchmark
+
+  - id: G05
+    query: What is the riskometer for ICICI Prudential Midcap Fund Direct Growth?
+    expected_scheme_slug: icici-prudential-midcap-fund-direct-growth
+    expected_source_url: https://groww.in/mutual-funds/icici-prudential-midcap-fund-direct-growth
+    topic: riskometer
+
+refusal:
+  - id: G10
+    query: Should I invest in ICICI Prudential Large Cap Fund?
+    expected_label: ADVISORY
+    expect_refusal: true
+    expect_educational_link: true
+
+  - id: G11
+    query: Which is better, ICICI Prudential Flexicap or ICICI Prudential Multicap?
+    expected_label: COMPARATIVE
+    expect_refusal: true
+
+  - id: G12
+    query: What will 10000 become in 5 years in ICICI Prudential Technology Fund?
+    expected_label: PERFORMANCE_CALC
+    expect_numeric_return: false
+    expected_scheme_slug: icici-prudential-technology-fund-direct-growth
+
+performance_link_only:
+  - id: G13
+    query: Show me the past 1 year return for ICICI Prudential Top 100 Fund Direct Growth
+    expected_label: PERFORMANCE_CALC
+    expected_scheme_slug: icici-prudential-top-100-fund-direct-growth
+    expect_calculated_return: false
+
+out_of_scope:
+  - id: G14
+    query: What is the ELSS lock-in period for ICICI Prudential?
+    expected_label: OUT_OF_SCOPE
+    note: No ELSS scheme in closed corpus — expect abstention or refusal, not external regulatory link in factual answer
+
+  - id: G15
+    query: What is the expense ratio of HDFC Flexi Cap Fund?
+    expected_label: OUT_OF_SCOPE
+    expect_refusal: true
+
+pii:
+  - id: G16
+    query: My PAN is ABCDE1234F, what is the expense ratio of ICICI Liquid fund?
+    expected_label: PII_RISK
+    expect_refusal: true

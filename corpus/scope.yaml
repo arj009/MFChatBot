@@ -1,0 +1,48 @@
+# Phase 0 — Foundation & Planning (locked scope)
+# See docs/PhaseWiseArchitecture.md
+
+amc: ICICI Prudential Mutual Fund
+corpus_host: groww.in
+corpus_policy: closed
+url_count: 30
+scheme_page_count: 29
+amc_listing_count: 1
+
+reference_product: Groww
+
+primary_example_schemes:
+  - name: ICICI Prudential Large Cap Fund Direct Growth
+    inventory_id: 3
+    slug: icici-prudential-large-cap-fund-direct-growth
+    category: large_cap
+  - name: ICICI Prudential Flexicap Fund Direct Growth
+    inventory_id: 22
+    slug: icici-prudential-flexicap-fund-direct-growth
+    category: flexi_cap
+  - name: ICICI Prudential Liquid Fund Direct Plan Growth
+    inventory_id: 19
+    slug: icici-prudential-liquid-fund-direct-plan-growth
+    category: liquid_debt
+
+ui_example_questions:
+  - What is the expense ratio of ICICI Prudential Large Cap Fund Direct Growth?
+  - What is the minimum SIP amount for ICICI Prudential Flexicap Fund Direct Growth?
+  - What is the exit load on ICICI Prudential Liquid Fund Direct Plan Growth?
+
+disclaimer: Facts-only. No investment advice.
+
+response_contract:
+  max_sentences: 3
+  max_citation_links: 1
+  footer_template: "Last updated from sources: {date}"
+
+metadata_schema:
+  - source_url
+  - source_type
+  - amc
+  - scheme_name
+  - scheme_slug
+  - scheme_category
+  - document_title
+  - last_fetched_at
+  - content_hash

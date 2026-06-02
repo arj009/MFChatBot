@@ -1,0 +1,250 @@
+{
+  "phase": "2.3",
+  "normalized_at": "2026-05-18T15:25:19+00:00",
+  "url_count": 30,
+  "ok_count": 30,
+  "skipped_count": 0,
+  "failed_count": 0,
+  "results": [
+    {
+      "entry_id": 1,
+      "normalize_status": "ok",
+      "normalized_path": "data/normalized/1.json",
+      "content_hash": "b170eca089f2e0457be9f0f29ee8eaa0c859a837490ecb63441e9f6ad6b85f00",
+      "char_count": 1241,
+      "errors": []
+    },
+    {
+      "entry_id": 2,
+      "normalize_status": "ok",
+      "normalized_path": "data/normalized/2.json",
+      "content_hash": "0931f79647ff63aaded8e0d17a49176155fe0d7e48e254936570b33876217bd6",
+      "char_count": 1026,
+      "errors": []
+    },
+    {
+      "entry_id": 3,
+      "normalize_status": "ok",
+      "normalized_path": "data/normalized/3.json",
+      "content_hash": "c45c59ecc868f01879fdc2bab47f5eda5912ed121fd986c00d7861ab2dd151d0",
+      "char_count": 1374,
+      "errors": []
+    },
+    {
+      "entry_id": 4,
+      "normalize_status": "ok",
+      "normalized_path": "data/normalized/4.json",
+      "content_hash": "d2995a02c9198e2672b085f550cafa007f147af3910111fe8e3b7ff51891bc2c",
+      "char_count": 1468,
+      "errors": []
+    },
+    {
+      "entry_id": 5,
+      "normalize_status": "ok",
+      "normalized_path": "data/normalized/5.json",
+      "content_hash": "4a13fe7790b03eb19ca7e23a6730f41069caa37549a471aa0581e84990583fc1",
+      "char_count": 1660,
+      "errors": []
+    },
+    {
+      "entry_id": 6,
+      "normalize_status": "ok",
+      "normalized_path": "data/normalized/6.json",
+      "content_hash": "418cc42f2964931aee3022292b977645747c3409da54263c0f7a2baaac28a294",
+      "char_count": 1498,
+      "errors": []
+    },
+    {
+      "entry_id": 7,
+      "normalize_status": "ok",
+      "normalized_path": "data/normalized/7.json",
+      "content_hash": "1c20e59542b87e023ac0fffffeac17fb953be33106cd65258d5c5233fd04809d",
+      "char_count": 1276,
+      "errors": []
+    },
+    {
+      "entry_id": 8,
+      "normalize_status": "ok",
+      "normalized_path": "data/normalized/8.json",
+      "content_hash": "72c56626a1d24f4c85f4fd0d5cee858daa523459fcf3bca49e89c2f811d06904",
+      "char_count": 1524,
+      "errors": []
+    },
+    {
+      "entry_id": 9,
+      "normalize_status": "ok",
+      "normalized_path": "data/normalized/9.json",
+      "content_hash": "37705bd9e9859bae2aa4bd5d54fdb2e30fde0c961fc79e5395f4ed3b901b9bbf",
+      "char_count": 1681,
+      "errors": []
+    },
+    {
+      "entry_id": 10,
+      "normalize_status": "ok",
+      "normalized_path": "data/normalized/10.json",
+      "content_hash": "2196330369c122725aca30f7ae43f837e33c02efa7074ecfb28a2c73405b9990",
+      "char_count": 1460,
+      "errors": []
+    },
+    {
+      "entry_id": 11,
+      "normalize_status": "ok",
+      "normalized_path": "data/normalized/11.json",
+      "content_hash": "ce9e68bd00a98b1d13fb7e1ab5752dbc3b2940617700cf9795fa67c8d4c54ea9",
+      "char_count": 1175,
+      "errors": []
+    },
+    {
+      "entry_id": 12,
+      "normalize_status": "ok",
+      "normalized_path": "data/normalized/12.json",
+      "content_hash": "ff23f87b128b84e85606b5f3baa0a42a08383d61add9a4de5cb46e64aa7bb909",
+      "char_count": 1217,
+      "errors": []
+    },
+    {
+      "entry_id": 13,
+      "normalize_status": "ok",
+      "normalized_path": "data/normalized/13.json",
+      "content_hash": "b459e1280876e720e6fc1c78ef9aa0b1ebb4239f4722b2e8c0fd119ac877c29e",
+      "char_count": 1369,
+      "errors": []
+    },
+    {
+      "entry_id": 14,
+      "normalize_status": "ok",
+      "normalized_path": "data/normalized/14.json",
+      "content_hash": "469e1d380bbafd1ebeb70538ece99ecbb6e0e5e067d104f48dd73777ca87cf1f",
+      "char_count": 1269,
+      "errors": []
+    },
+    {
+      "entry_id": 15,
+      "normalize_status": "ok",
+      "normalized_path": "data/normalized/15.json",
+      "content_hash": "d4991d22ad67d0d7846729493a202137d437f73b2a03aed82dca15836bf1366e",
+      "char_count": 1540,
+      "errors": []
+    },
+    {
+      "entry_id": 16,
+      "normalize_status": "ok",
+      "normalized_path": "data/normalized/16.json",
+      "content_hash": "9de3bfbcb658ca210bb6c4b2572645297c642e6f4e55683c6c374c0cee93c83f",
+      "char_count": 1577,
+      "errors": []
+    },
+    {
+      "entry_id": 17,
+      "normalize_status": "ok",
+      "normalized_path": "data/normalized/17.json",
+      "content_hash": "961015054709020aeeb9338757fee8687f8d51c2381d232b797fbd3937b5296a",
+      "char_count": 1261,
+      "errors": []
+    },
+    {
+      "entry_id": 18,
+      "normalize_status": "ok",
+      "normalized_path": "data/normalized/18.json",
+      "content_hash": "a0217163867aa5476d48b455b360c7751c4e0e23ec06a711a749e7465010fdbb",
+      "char_count": 1285,
+      "errors": []
+    },
+    {
+      "entry_id": 19,
+      "normalize_status": "ok",
+      "normalized_path": "data/normalized/19.json",
+      "content_hash": "1ca785135d9c32b5c54c6700a1fa377a332c57d7bc480db2cd7c1cc9cacaf55d",
+      "char_count": 1832,
+      "errors": []
+    },
+    {
+      "entry_id": 20,
+      "normalize_status": "ok",
+      "normalized_path": "data/normalized/20.json",
+      "content_hash": "fa82b76d83c1bc7c5ba4b34546ec4c821e713d18bee63bf1935db6f898197c9a",
+      "char_count": 1250,
+      "errors": []
+    },
+    {
+      "entry_id": 21,
+      "normalize_status": "ok",
+      "normalized_path": "data/normalized/21.json",
+      "content_hash": "42526dcbb5120073dce87ca46b7ac0eb5a8deab7c031d0812b32007e11d74a3d",
+      "char_count": 1251,
+      "errors": []
+    },
+    {
+      "entry_id": 22,
+      "normalize_status": "ok",
+      "normalized_path": "data/normalized/22.json",
+      "content_hash": "046879a8fba365d4bd7cdae891b04d08737ddbd1f7df88be454adbec95edfe01",
+      "char_count": 1237,
+      "errors": []
+    },
+    {
+      "entry_id": 23,
+      "normalize_status": "ok",
+      "normalized_path": "data/normalized/23.json",
+      "content_hash": "8fbdce4f130458e2ee236eac0e5e3b247e083f1dac985abddb0da00e94b5a494",
+      "char_count": 1161,
+      "errors": []
+    },
+    {
+      "entry_id": 24,
+      "normalize_status": "ok",
+      "normalized_path": "data/normalized/24.json",
+      "content_hash": "0e4be5c4897fc5e63793588d809b3b0f3c4dfd5341395ad86c0eafe39f244233",
+      "char_count": 1393,
+      "errors": []
+    },
+    {
+      "entry_id": 25,
+      "normalize_status": "ok",
+      "normalized_path": "data/normalized/25.json",
+      "content_hash": "872315c9d8ec079183088bf8c25c77423e3b2ce8e1f48da2e2761f9c0046f611",
+      "char_count": 1967,
+      "errors": []
+    },
+    {
+      "entry_id": 26,
+      "normalize_status": "ok",
+      "normalized_path": "data/normalized/26.json",
+      "content_hash": "c89cdbdaca8fbc8a9cd43ac7728df9e72d4308134ab8bf21df426cb63d9d2110",
+      "char_count": 1392,
+      "errors": []
+    },
+    {
+      "entry_id": 27,
+      "normalize_status": "ok",
+      "normalized_path": "data/normalized/27.json",
+      "content_hash": "749aedc9b73d6420582c08b309691285234efd5b574f3756a8aba56b48878146",
+      "char_count": 1398,
+      "errors": []
+    },
+    {
+      "entry_id": 28,
+      "normalize_status": "ok",
+      "normalized_path": "data/normalized/28.json",
+      "content_hash": "3e64e86f72b137d00b25ae4048ecd76dae614d684017930f937e9e7fb1a5a3b6",
+      "char_count": 1420,
+      "errors": []
+    },
+    {
+      "entry_id": 29,
+      "normalize_status": "ok",
+      "normalized_path": "data/normalized/29.json",
+      "content_hash": "7a4848089f87edce45ad356edfbbd91181ba2246d82deffb0b3c42ff67163c22",
+      "char_count": 1266,
+      "errors": []
+    },
+    {
+      "entry_id": 30,
+      "normalize_status": "ok",
+      "normalized_path": "data/normalized/30.json",
+      "content_hash": "6fcc72baee5abee0940ff54c7e60e6e025fe216b26c6b947c813a71fd3957ce2",
+      "char_count": 1432,
+      "errors": []
+    }
+  ]
+}
