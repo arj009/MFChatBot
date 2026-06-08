@@ -2,8 +2,8 @@
   "version": "1.0",
   "entries": {
     "https://groww.in/mutual-funds/filter?fund_house=%5B%22ICICI+Prudential+Mutual+Fund%22%5D": {
-      "content_hash": "bc9d8e812b0b56b64bad5c75ddc5de6d9b3a8d2afd86209243f9295ac055ac90",
-      "last_fetched_at": "2026-06-06T07:31:24+00:00"
+      "content_hash": "5ffbeb0812983c257b0b3ed213f74157ab877afd9bbaf4d670df2ceefc2542f6",
+      "last_fetched_at": "2026-06-08T09:13:20+00:00"
     },
     "https://groww.in/mutual-funds/icici-prudential-active-momentum-fund-direct-growth": {
       "content_hash": "104b51de7f1857e86ebec41002a7088e3fdaa6f02b2db9c2b734af15676d8512",
