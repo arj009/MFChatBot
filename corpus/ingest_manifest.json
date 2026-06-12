@@ -2,124 +2,124 @@
   "version": "1.0",
   "entries": {
     "https://groww.in/mutual-funds/filter?fund_house=%5B%22ICICI+Prudential+Mutual+Fund%22%5D": {
-      "content_hash": "047d44f1c584cfa6767ed7fb7ec50a5643e5dcd867b074a560d4afbfc907e4da",
-      "last_fetched_at": "2026-06-11T09:00:26+00:00"
+      "content_hash": "c96564081dfd85a72b74dbd7f8bc5f637f34b72bed85031f0e51f921ca5906f0",
+      "last_fetched_at": "2026-06-12T08:47:28+00:00"
     },
     "https://groww.in/mutual-funds/icici-prudential-active-momentum-fund-direct-growth": {
-      "content_hash": "d2437f1974eee2921e7a64180f00b0840a8259cd055735d71e6065a7c1c924c4",
-      "last_fetched_at": "2026-06-11T09:00:39+00:00"
+      "content_hash": "c253d7b6715f5c5a55a7e61009c919df963abdff7a8d53ac3048693ad7793463",
+      "last_fetched_at": "2026-06-12T08:47:40+00:00"
     },
     "https://groww.in/mutual-funds/icici-prudential-aggressive-hybrid-active-fof-direct-growth": {
-      "content_hash": "59cc8b8d88e2c58c3d3debf5cf14b87d74cfdc7ba9d390ec0dede45d796acf20",
-      "last_fetched_at": "2026-06-11T09:00:40+00:00"
+      "content_hash": "6a0bb891e07ca52c5bbff97c31dd4411719d0f8b08524e3fe83cc303bab4737c",
+      "last_fetched_at": "2026-06-12T08:47:40+00:00"
     },
     "https://groww.in/mutual-funds/icici-prudential-balanced-advantage-fund-direct-growth": {
-      "content_hash": "d54f62949ad9d5c672844ecc2a8d03baa1f0a2ea0c877fd607778557ba5667c9",
-      "last_fetched_at": "2026-06-11T09:00:30+00:00"
+      "content_hash": "a90fe8a3a67902645293f139bb75c0d50d2de8a6a6c7ae50f0aa8e54005ea10a",
+      "last_fetched_at": "2026-06-12T08:47:31+00:00"
     },
     "https://groww.in/mutual-funds/icici-prudential-balanced-direct-growth": {
-      "content_hash": "7495dcd646a1ba7eaf636e48815338795b800b1069afda2e6481eaea32371af9",
-      "last_fetched_at": "2026-06-11T09:00:36+00:00"
+      "content_hash": "649f886e80cdfdf0e4c623c131daac8368e3cca60e91ab41770f357d28444909",
+      "last_fetched_at": "2026-06-12T08:47:37+00:00"
     },
     "https://groww.in/mutual-funds/icici-prudential-bharat-22-fof-direct-growth": {
-      "content_hash": "ca83d235eba3dd0bdd146da399b18a5b2559de89a46ee600e0256b78e838470c",
-      "last_fetched_at": "2026-06-11T09:00:21+00:00"
+      "content_hash": "5a9d9e83fb1af2115f019ff203f431408222bfcc45ad05918ce18186eb8431b4",
+      "last_fetched_at": "2026-06-12T08:47:22+00:00"
     },
     "https://groww.in/mutual-funds/icici-prudential-commodities-fund-direct-growth": {
-      "content_hash": "4c19fa3307321b5fb95d2f395414a92447b80d9bdf50d2658d6bc8c59f9ad90d",
-      "last_fetched_at": "2026-06-11T09:00:37+00:00"
+      "content_hash": "107cd94dc61f101616eb86b01d752bad97e20e9265d81f5a0ff0d6494640d606",
+      "last_fetched_at": "2026-06-12T08:47:38+00:00"
     },
     "https://groww.in/mutual-funds/icici-prudential-dividend-yield-equity-fund-direct-growth": {
-      "content_hash": "37f773e9e096abedbd0773c013e7243eebc10c460cf4a88b34a289395d480fe8",
-      "last_fetched_at": "2026-06-11T09:00:27+00:00"
+      "content_hash": "94fe1d8623f6dd36de2875093d041bdeef8590e55a3d5c2ca223e6454fdbb513",
+      "last_fetched_at": "2026-06-12T08:47:28+00:00"
     },
     "https://groww.in/mutual-funds/icici-prudential-dynamic-plan-direct-growth": {
-      "content_hash": "0fa12e39c161ccee1da1e0ee97133933890482525f082aed19fc3818d8c7c413",
-      "last_fetched_at": "2026-06-11T09:00:22+00:00"
+      "content_hash": "7461aa414d6b1507a4534e5f926adfebddc5bd339957e8f6d5e0ba6b08755aed",
+      "last_fetched_at": "2026-06-12T08:47:23+00:00"
     },
     "https://groww.in/mutual-funds/icici-prudential-flexicap-fund-direct-growth": {
-      "content_hash": "6bda08c7ee9e14446d73bd326a1ccfad74a5b7b86c84cc1dcbc277228e736be9",
-      "last_fetched_at": "2026-06-11T09:00:34+00:00"
+      "content_hash": "57ee7868792e47f95379d73fe475cfd34b28c0cc403b4e01bfda8ce01adb3267",
+      "last_fetched_at": "2026-06-12T08:47:35+00:00"
     },
     "https://groww.in/mutual-funds/icici-prudential-gold-etf-fof-direct-growth": {
-      "content_hash": "5e371a7c9b2240c0186c876ad989462a245687e1da12d5d248537d85097958ae",
-      "last_fetched_at": "2026-06-11T09:00:35+00:00"
+      "content_hash": "1f94e30673220c077dcd10d026a3fef18e749348195e7b3f915406ee04dd7d9f",
+      "last_fetched_at": "2026-06-12T08:47:36+00:00"
     },
     "https://groww.in/mutual-funds/icici-prudential-indo-asia-equity-fund-direct-growth": {
-      "content_hash": "bb25df02bc389560c15b7bd4d681f5dfc546e5f0d7909816bc24431a92de7804",
-      "last_fetched_at": "2026-06-11T09:00:30+00:00"
+      "content_hash": "da439be493aa5d847387c2b850d4257aa186e088f373253f1ea31f1eadb96333",
+      "last_fetched_at": "2026-06-12T08:47:30+00:00"
     },
     "https://groww.in/mutual-funds/icici-prudential-infrastructure-fund-direct-growth": {
-      "content_hash": "08d598e21dc3c0b294f71a615dda8167a17fc407730454242c8e1191ad0afe8e",
-      "last_fetched_at": "2026-06-11T09:00:36+00:00"
+      "content_hash": "5c458db5abfc113723a2383bd4c5a867414e8b85f2ec9076603abf5c4a2bc6b6",
+      "last_fetched_at": "2026-06-12T08:47:36+00:00"
     },
     "https://groww.in/mutual-funds/icici-prudential-large-cap-fund-direct-growth": {
-      "content_hash": "645835fe663df5d93d989033ead9565e562bdef58e60e166a97d7736f265314f",
-      "last_fetched_at": "2026-06-11T09:00:22+00:00"
+      "content_hash": "ff6057a129c3b422707b7a77e051e0574dab493ece0bdcd061c59ad9ada52434",
+      "last_fetched_at": "2026-06-12T08:47:22+00:00"
     },
     "https://groww.in/mutual-funds/icici-prudential-liquid-fund-direct-plan-growth": {
-      "content_hash": "22686c08345f7dbb63d72bbac6f7fbec59d3e07ce44de5678b8879b1ff2d2104",
-      "last_fetched_at": "2026-06-11T09:00:32+00:00"
+      "content_hash": "3b062cf312ebb1e20e0ef36faefd87b430291fbf3f661073066eb0f529435c20",
+      "last_fetched_at": "2026-06-12T08:47:33+00:00"
     },
     "https://groww.in/mutual-funds/icici-prudential-midcap-fund-direct-growth": {
-      "content_hash": "2bd48c36660e1fddf8091ca00294eeee6e5639e9f6db0ed32444214852027cf5",
-      "last_fetched_at": "2026-06-11T09:00:31+00:00"
+      "content_hash": "f37f2f43069c2c131836ccb86b7b270e3672f94c2352ef062f879b7ba720be57",
+      "last_fetched_at": "2026-06-12T08:47:32+00:00"
     },
     "https://groww.in/mutual-funds/icici-prudential-multicap-fund-direct-growth": {
-      "content_hash": "f911d6c0b9424edd4e97d1c0a294933aa81a0e0295e1b6f54ae8f0ab6c5ef5cd",
-      "last_fetched_at": "2026-06-11T09:00:29+00:00"
+      "content_hash": "bafb3bda4f764aa7e3d0da161981e7a7b0a3af0b1f014ba28e8b95112d706fc8",
+      "last_fetched_at": "2026-06-12T08:47:30+00:00"
     },
     "https://groww.in/mutual-funds/icici-prudential-nifty-index-fund-direct-growth": {
-      "content_hash": "9766b495ea6620cc547680cc84f68e758f606b0e31d8df8575a22c5db5ec47fc",
-      "last_fetched_at": "2026-06-11T09:00:34+00:00"
+      "content_hash": "c691e1b8690fba95585b983c64e222f242af4f8bf7c40f46f85c9c1d6c1215fc",
+      "last_fetched_at": "2026-06-12T08:47:34+00:00"
     },
     "https://groww.in/mutual-funds/icici-prudential-nifty-it-index-fund-direct-growth": {
-      "content_hash": "91c600a41c5aae7c440182c0d1894cb848e670504482f22eea0762d76c98f90b",
-      "last_fetched_at": "2026-06-11T09:00:28+00:00"
+      "content_hash": "4661189afc37517d8b631b5efce5476cd4c4089e76ab1a9ed7826c2ccb6fed41",
+      "last_fetched_at": "2026-06-12T08:47:29+00:00"
     },
     "https://groww.in/mutual-funds/icici-prudential-nifty-next-50-index-fund-direct-growth": {
-      "content_hash": "eab6d6443f776a9063524d8fcd657c09a493ffb50e00f16879b616df8b1e4748",
-      "last_fetched_at": "2026-06-11T09:00:25+00:00"
+      "content_hash": "67a9c8958b07f5915453687771562129b6e3285d2d7e7bb7c6a0b6dd900f1261",
+      "last_fetched_at": "2026-06-12T08:47:26+00:00"
     },
     "https://groww.in/mutual-funds/icici-prudential-pharma-healthcare-and-diagnostics-(p.h.d)-fund-direct-growth": {
-      "content_hash": "48abefc32873b3cc106c09fa9d8d2dd3843de1b4558e48000a864e8555dc3ed5",
-      "last_fetched_at": "2026-06-11T09:00:24+00:00"
+      "content_hash": "1c63f34393844d2a15d18a8780b73141f6a7a2ae22d5b0e0bdd1c3680f913cd4",
+      "last_fetched_at": "2026-06-12T08:47:26+00:00"
     },
     "https://groww.in/mutual-funds/icici-prudential-regular-i-come-fund-direct-growth": {
-      "content_hash": "151ff4534e5c3d8b1dc5226b33bf16815271f4ed46fe00ca1dd2435ee051571c",
-      "last_fetched_at": "2026-06-11T09:00:28+00:00"
+      "content_hash": "bb5009c051d3f2a2cb9576c7f9fa556ec82098874be9557a9e4188fea29587e9",
+      "last_fetched_at": "2026-06-12T08:47:29+00:00"
     },
     "https://groww.in/mutual-funds/icici-prudential-retirement-fund-hybrid-aggressive-plan-direct-growth": {
-      "content_hash": "c785c387596a1a9e6078739bb047979c20b041c8dc2639de97cd8ddcc98d0f69",
-      "last_fetched_at": "2026-06-11T09:00:25+00:00"
+      "content_hash": "11816e7b81a826b1aca89f35f205914a8d9f3f6be55c34e3ae3cc69ac86f4cc5",
+      "last_fetched_at": "2026-06-12T08:47:27+00:00"
     },
     "https://groww.in/mutual-funds/icici-prudential-retirement-fund-pure-equity-plan-direct-growth": {
-      "content_hash": "7f76f36f9391cb83a39238aeb0c7381767a6928f816fcc1b9142ce306b0dc07c",
-      "last_fetched_at": "2026-06-11T09:00:32+00:00"
+      "content_hash": "54ddce80c136e68a57883777e619e626cc3678d9f48906601c4332a9b13d0a35",
+      "last_fetched_at": "2026-06-12T08:47:32+00:00"
     },
     "https://groww.in/mutual-funds/icici-prudential-short-term-plan-direct-growth": {
-      "content_hash": "63200cef3191e3ec46d691546e0ed8b6d3f1e1b567a1487e74097f3932411375",
-      "last_fetched_at": "2026-06-11T09:00:33+00:00"
+      "content_hash": "8b46f360fc30f470bdee6c7c9e76542b5e3d968efd4593d19e76e008f792cc88",
+      "last_fetched_at": "2026-06-12T08:47:34+00:00"
     },
     "https://groww.in/mutual-funds/icici-prudential-silver-etf-fof-direct-growth": {
-      "content_hash": "24f965ad78d20c6cd59f4178547a25924420eebc3f61fa406e3eedb804c90bc2",
-      "last_fetched_at": "2026-06-11T09:00:21+00:00"
+      "content_hash": "390bcff89cbd88f56e79d4647f71f5b1ea35ea4fb648441040987bf993e80054",
+      "last_fetched_at": "2026-06-12T08:47:20+00:00"
     },
     "https://groww.in/mutual-funds/icici-prudential-technology-fund-direct-growth": {
-      "content_hash": "27a472800285bb22f88a5107d967461b1a87e47d5b3ffed938141a19bf9d7df6",
-      "last_fetched_at": "2026-06-11T09:00:24+00:00"
+      "content_hash": "1adc6be4d96c4d4f542019600062c7f33391f7ca0847de1b152d4a63a756fe52",
+      "last_fetched_at": "2026-06-12T08:47:25+00:00"
     },
     "https://groww.in/mutual-funds/icici-prudential-top-100-fund-direct-growth": {
-      "content_hash": "8e80e68d5a211ed7b93e7f74066422f97ef57f6652b4b16ed60bb521dfe8aa81",
-      "last_fetched_at": "2026-06-11T09:00:37+00:00"
+      "content_hash": "2a181a07aff521fb8d54d50638edaad82b3e3cf2afa633abebcaca6ff6af14ab",
+      "last_fetched_at": "2026-06-12T08:47:39+00:00"
     },
     "https://groww.in/mutual-funds/icici-prudential-transportation-and-logistics-fund-direct-growth": {
-      "content_hash": "ee53e5789ede267da3d55733f7a1e9650f67d52c4756ac45878c701dc2f020e6",
-      "last_fetched_at": "2026-06-11T09:00:38+00:00"
+      "content_hash": "fec1640540634a86a51ba45004e42962ccc3a133812ca9705d34dc3febbb1afe",
+      "last_fetched_at": "2026-06-12T08:47:39+00:00"
     },
     "https://groww.in/mutual-funds/icici-prudential-value-direct-growth": {
-      "content_hash": "830afd2f4957916be994d81dde0829d46045766e0fbf6e02b6159130d46c978f",
-      "last_fetched_at": "2026-06-11T09:00:32+00:00"
+      "content_hash": "f6d4992d0946edbba64e5c5de4156f17338ff14ae350c8f962c63a5242251316",
+      "last_fetched_at": "2026-06-12T08:47:33+00:00"
     }
   }
 }
