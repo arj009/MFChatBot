@@ -2,16 +2,16 @@
   "version": "1.0",
   "entries": {
     "https://groww.in/mutual-funds/filter?fund_house=%5B%22ICICI+Prudential+Mutual+Fund%22%5D": {
-      "content_hash": "84b8620fb71bdd38c3b2c15778eeea47e893f83011a1de5a39ec0b10993eb3f1",
-      "last_fetched_at": "2026-07-04T07:22:29+00:00"
+      "content_hash": "203b93ee77a2985c792d5612d2e33a8be33d2b33f5d5a3c3cb536bf1444201cb",
+      "last_fetched_at": "2026-07-05T07:46:01+00:00"
     },
     "https://groww.in/mutual-funds/icici-prudential-active-momentum-fund-direct-growth": {
       "content_hash": "178c2aeeed8d120b4b8b1059a4f542034fef190a7b7f1a447628d098bad6c317",
       "last_fetched_at": "2026-07-04T07:22:42+00:00"
     },
     "https://groww.in/mutual-funds/icici-prudential-aggressive-hybrid-active-fof-direct-growth": {
-      "content_hash": "14aeeadd7e5e3579a3924f60df0ac99357baa229f3c2bc0a3c4f78431a416bb5",
-      "last_fetched_at": "2026-07-04T07:22:42+00:00"
+      "content_hash": "c1456dfeee139a75d4e0012b4e809b2ea249044ff739719253edc241fcd2550a",
+      "last_fetched_at": "2026-07-05T07:46:12+00:00"
     },
     "https://groww.in/mutual-funds/icici-prudential-balanced-advantage-fund-direct-growth": {
       "content_hash": "6262cd39f9722d07a5bb4622a5d5b866fa321c979fa601b82755d15b5bdb18eb",
@@ -58,8 +58,8 @@
       "last_fetched_at": "2026-07-04T07:22:26+00:00"
     },
     "https://groww.in/mutual-funds/icici-prudential-liquid-fund-direct-plan-growth": {
-      "content_hash": "37d908e6bc692d242e71729b5cc913b99702953959e15c4d22ba2439c5f37c77",
-      "last_fetched_at": "2026-07-04T07:22:35+00:00"
+      "content_hash": "8537b390e26b16548f5efbf9be8ae7788818843dc726f9dbaacaf0cc46072b45",
+      "last_fetched_at": "2026-07-05T07:46:07+00:00"
     },
     "https://groww.in/mutual-funds/icici-prudential-midcap-fund-direct-growth": {
       "content_hash": "27c52b255337c1fb847f03e69a7233ffcdf92e1659d04fdb57be33b6814f6e94",
